@@ -3,3 +3,82 @@
 }
     /* justify x axle */
     /* align y axle */ 
+
+    body{
+        background-color: rgb(60, 60, 60);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: antiquewhite;
+    }
+
+    .loader {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        max-width: 100%;
+        margin: 100px auto;
+
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .input{
+        position: absolute;
+        left: 50%;
+        translate: -50%, -50%;
+    }
+    
+    .movies-container{
+        margin-top: 200px;
+        
+
+
+    }
+
+    img{
+        width: auto;
+        height: auto;
+    }
+
+    .img{
+        width: 300px;
+    }
+
+    .upper-text{
+        background-color: antiquewhite;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+
+    .card{
+        background-color: var(--card-blue);
+        border-radius: 5px;
+        border: 1.5px solid black;
+        
+        width: 600px;
+    }
+    
+    .card:nth-of-type(2n){
+        background-color: var(--card-gray);
+    }
+    
+    .text-container{
+        background-color: var(--card-gray);
+        /* background-color: aqua; */
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+
+    .text-container:nth-of-type(1n){
+        background-color: var(--card-gray);
+        /* background-color: aquamarine; */
+    }
+    .card:nth-of-type(2n) .text-container{
+        background-color: var(--card-blue);
+    }

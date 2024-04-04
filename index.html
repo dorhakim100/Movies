@@ -6,19 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TITLE HERE</title>
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/app.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body onload="init()">
 <h1>Hey</h1>
     
+<input class="input" onchange="onSelectGenre(this)"
+name="symbol" type="search"
+list="genres" placeholder="Select genre" />
+<datalist id="genres">
+    <option value="Action" label="Action"></option>
+    <option value="Adventure" label="Adventure"></option>
+    <option value="Animation" label="Animation"></option>
+    <option value="Comedy" label="Comedy"></option>
+    <option value="Crime" label="Crime"></option>
+</datalist>
+<img src="img/loader.svg" alt="loader" class="loader hidden">
 
+<div class="movies-container">
+
+    <div class="card">
+       <div class="upper-text"><span>bla bla</span></div>
+       <img class="img" src="/img/movie-poster.jpeg" alt="">
+       <div class="text-container"> 
+           <h2 class="movie name">Name</h2>
+           <h3 class="movie genre">Genre</h3>
+           <h3 class="movie rating">Rating: <span>⭐️⭐️⭐️</span></h3>
+           <h3 class="movie description">Description:</h3>
+            <p class="movie lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dolore quas enim dolorem quod nesciunt delectus atque quam consequatur, ad impedit eius aliquam sint voluptatum itaque perspiciatis earum voluptates? Iure.</p>
+       </div>
+   </div>
+    <div class="card">
+
+       <div class="upper-text"><span>bla bla</span></div>
+       <img class="img" src="/img/movie-poster.jpeg" alt="">
+       <div class="text-container">
+           <h2 class="movie name">Name</h2>
+           <h3 class="movie genre">Genre</h3>
+           <h3 class="movie rating">Rating: <span>⭐️⭐️⭐️</span></h3>
+           <h3 class="movie description">Description:</h3>
+            <p class="movie lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dolore quas enim dolorem quod nesciunt delectus atque quam consequatur, ad impedit eius aliquam sint voluptatum itaque perspiciatis earum voluptates? Iure.</p>
+       </div>
+   </div>
+    <div class="card">
+
+       <div class="upper-text"><span>bla bla</span></div>
+       <img class="img" src="/img/movie-poster.jpeg" alt="">
+       <!-- <img class="img" src="${card.imgSrc}" alt=""> -->
+       <div class="text-container">
+           <h2 class="movie name">Name</h2>
+           <h3 class="movie genre">Genre</h3>
+           <h3 class="movie rating">Rating: <span>⭐️⭐️⭐️</span></h3>
+           <h3 class="movie description">Description:</h3>
+            <p class="movie lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dolore quas enim dolorem quod nesciunt delectus atque quam consequatur, ad impedit eius aliquam sint voluptatum itaque perspiciatis earum voluptates? Iure.</p>
+       </div>
+   </div>
+
+</div>
+
+<!-- API -->
+<!-- https://api.themoviedb.org/3/genre/movie/list?api_key=35a2e166387e103a04fd0ffcb58df7c0 -->
     
     <script src="js/lib/JQuery/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     <script src="js/utils.js"></script>
-    <script src="js/JAVASCRIPT_NAME_HERE.js"></script>
+
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/movies.service.js"></script>
+
+    <script src="js/movies.controller.js"></script>
 </body>
 
 </html>
